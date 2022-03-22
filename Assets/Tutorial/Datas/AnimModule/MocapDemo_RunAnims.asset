@@ -18,11 +18,11 @@ MonoBehaviour:
   AfterClips: []
   Looping: 0
   IgnoreEdges: 0
-  ExtrapolateTrajectory: 0
+  ExtrapolateTrajectory: 1
   FlattenTrajectory: 1
   RuntimeSplicing: 0
   GlobalTags: 0
-  GlobalFavourTags: 2
+  GlobalFavourTags: 1
   TagTracks: []
   FavourTagTracks: []
   Events: []
@@ -205,11 +205,11 @@ MonoBehaviour:
     - {fileID: 114364148911516906}
     - {fileID: -401345132108858020}
     IgnoreEdges_default: 0
-    Extrapolate_default: 0
+    Extrapolate_default: 1
     FlattenTrajectory_default: 1
     RuntimeSplicing_default: 0
     RequireTags_default: 0
-    FavourTags_default: 2
+    FavourTags_default: 1
   - CatagoryName: AccelDecel
     Composites:
     - {fileID: 114845207313832442}
@@ -243,12 +243,12 @@ MonoBehaviour:
   BeforeClips: []
   AfterClips: []
   Looping: 0
-  IgnoreEdges: 1
-  ExtrapolateTrajectory: 0
+  IgnoreEdges: 0
+  ExtrapolateTrajectory: 1
   FlattenTrajectory: 1
   RuntimeSplicing: 0
   GlobalTags: 0
-  GlobalFavourTags: 2
+  GlobalFavourTags: 1
   TagTracks:
   - m_tagId: 1073741824
     m_tagName: 
@@ -423,12 +423,12 @@ MonoBehaviour:
   BeforeClips: []
   AfterClips: []
   Looping: 0
-  IgnoreEdges: 1
-  ExtrapolateTrajectory: 0
+  IgnoreEdges: 0
+  ExtrapolateTrajectory: 1
   FlattenTrajectory: 1
   RuntimeSplicing: 0
   GlobalTags: 0
-  GlobalFavourTags: 2
+  GlobalFavourTags: 1
   TagTracks:
   - m_tagId: 1073741824
     m_tagName: 
@@ -603,12 +603,12 @@ MonoBehaviour:
   BeforeClips: []
   AfterClips: []
   Looping: 0
-  IgnoreEdges: 1
-  ExtrapolateTrajectory: 0
+  IgnoreEdges: 0
+  ExtrapolateTrajectory: 1
   FlattenTrajectory: 1
   RuntimeSplicing: 0
   GlobalTags: 0
-  GlobalFavourTags: 2
+  GlobalFavourTags: 1
   TagTracks:
   - m_tagId: 1073741824
     m_tagName: 
@@ -914,12 +914,12 @@ MonoBehaviour:
   BeforeClips: []
   AfterClips: []
   Looping: 0
-  IgnoreEdges: 1
-  ExtrapolateTrajectory: 0
+  IgnoreEdges: 0
+  ExtrapolateTrajectory: 1
   FlattenTrajectory: 1
   RuntimeSplicing: 0
   GlobalTags: 0
-  GlobalFavourTags: 2
+  GlobalFavourTags: 1
   TagTracks:
   - m_tagId: 1073741824
     m_tagName: 
@@ -1147,12 +1147,12 @@ MonoBehaviour:
   BeforeClips: []
   AfterClips: []
   Looping: 0
-  IgnoreEdges: 1
-  ExtrapolateTrajectory: 0
+  IgnoreEdges: 0
+  ExtrapolateTrajectory: 1
   FlattenTrajectory: 1
   RuntimeSplicing: 0
   GlobalTags: 0
-  GlobalFavourTags: 2
+  GlobalFavourTags: 1
   TagTracks:
   - m_tagId: 1073741824
     m_tagName: 
@@ -1391,12 +1391,12 @@ MonoBehaviour:
   BeforeClips: []
   AfterClips: []
   Looping: 0
-  IgnoreEdges: 1
-  ExtrapolateTrajectory: 0
+  IgnoreEdges: 0
+  ExtrapolateTrajectory: 1
   FlattenTrajectory: 1
   RuntimeSplicing: 0
   GlobalTags: 0
-  GlobalFavourTags: 2
+  GlobalFavourTags: 1
   TagTracks:
   - m_tagId: 1073741824
     m_tagName: 
@@ -1657,12 +1657,12 @@ MonoBehaviour:
   BeforeClips: []
   AfterClips: []
   Looping: 0
-  IgnoreEdges: 1
-  ExtrapolateTrajectory: 0
+  IgnoreEdges: 0
+  ExtrapolateTrajectory: 1
   FlattenTrajectory: 1
   RuntimeSplicing: 0
   GlobalTags: 0
-  GlobalFavourTags: 2
+  GlobalFavourTags: 1
   TagTracks:
   - m_tagId: 1073741824
     m_tagName: 
@@ -1961,12 +1961,12 @@ MonoBehaviour:
   BeforeClips: []
   AfterClips: []
   Looping: 0
-  IgnoreEdges: 1
-  ExtrapolateTrajectory: 0
+  IgnoreEdges: 0
+  ExtrapolateTrajectory: 1
   FlattenTrajectory: 1
   RuntimeSplicing: 0
   GlobalTags: 0
-  GlobalFavourTags: 2
+  GlobalFavourTags: 1
   TagTracks:
   - m_tagId: 1073741824
     m_tagName: 
@@ -2205,12 +2205,12 @@ MonoBehaviour:
   BeforeClips: []
   AfterClips: []
   Looping: 0
-  IgnoreEdges: 1
-  ExtrapolateTrajectory: 0
+  IgnoreEdges: 0
+  ExtrapolateTrajectory: 1
   FlattenTrajectory: 1
   RuntimeSplicing: 0
   GlobalTags: 0
-  GlobalFavourTags: 2
+  GlobalFavourTags: 1
   TagTracks:
   - m_tagId: 1073741824
     m_tagName: 
@@ -2466,12 +2466,12 @@ MonoBehaviour:
   BeforeClips: []
   AfterClips: []
   Looping: 0
-  IgnoreEdges: 1
-  ExtrapolateTrajectory: 0
+  IgnoreEdges: 0
+  ExtrapolateTrajectory: 1
   FlattenTrajectory: 1
   RuntimeSplicing: 0
   GlobalTags: 0
-  GlobalFavourTags: 2
+  GlobalFavourTags: 1
   TagTracks:
   - m_tagId: 1073741824
     m_tagName: 
@@ -2710,12 +2710,12 @@ MonoBehaviour:
   BeforeClips: []
   AfterClips: []
   Looping: 0
-  IgnoreEdges: 1
-  ExtrapolateTrajectory: 0
+  IgnoreEdges: 0
+  ExtrapolateTrajectory: 1
   FlattenTrajectory: 1
   RuntimeSplicing: 0
   GlobalTags: 0
-  GlobalFavourTags: 2
+  GlobalFavourTags: 1
   TagTracks:
   - m_tagId: 1073741824
     m_tagName: 
@@ -2980,12 +2980,12 @@ MonoBehaviour:
   BeforeClips: []
   AfterClips: []
   Looping: 0
-  IgnoreEdges: 1
-  ExtrapolateTrajectory: 0
+  IgnoreEdges: 0
+  ExtrapolateTrajectory: 1
   FlattenTrajectory: 1
   RuntimeSplicing: 0
   GlobalTags: 0
-  GlobalFavourTags: 2
+  GlobalFavourTags: 1
   TagTracks:
   - m_tagId: 1073741824
     m_tagName: 
@@ -3266,12 +3266,12 @@ MonoBehaviour:
   BeforeClips: []
   AfterClips: []
   Looping: 0
-  IgnoreEdges: 1
-  ExtrapolateTrajectory: 0
+  IgnoreEdges: 0
+  ExtrapolateTrajectory: 1
   FlattenTrajectory: 1
   RuntimeSplicing: 0
   GlobalTags: 0
-  GlobalFavourTags: 2
+  GlobalFavourTags: 1
   TagTracks:
   - m_tagId: 1073741824
     m_tagName: 
@@ -3504,12 +3504,12 @@ MonoBehaviour:
   BeforeClips: []
   AfterClips: []
   Looping: 0
-  IgnoreEdges: 1
-  ExtrapolateTrajectory: 0
+  IgnoreEdges: 0
+  ExtrapolateTrajectory: 1
   FlattenTrajectory: 1
   RuntimeSplicing: 0
   GlobalTags: 0
-  GlobalFavourTags: 2
+  GlobalFavourTags: 1
   TagTracks:
   - m_tagId: 1073741824
     m_tagName: 
@@ -3682,12 +3682,12 @@ MonoBehaviour:
   BeforeClips: []
   AfterClips: []
   Looping: 1
-  IgnoreEdges: 1
-  ExtrapolateTrajectory: 0
+  IgnoreEdges: 0
+  ExtrapolateTrajectory: 1
   FlattenTrajectory: 1
   RuntimeSplicing: 0
   GlobalTags: 0
-  GlobalFavourTags: 2
+  GlobalFavourTags: 1
   TagTracks: []
   FavourTagTracks: []
   Events: []
@@ -3834,12 +3834,12 @@ MonoBehaviour:
   BeforeClips: []
   AfterClips: []
   Looping: 0
-  IgnoreEdges: 1
-  ExtrapolateTrajectory: 0
+  IgnoreEdges: 0
+  ExtrapolateTrajectory: 1
   FlattenTrajectory: 1
   RuntimeSplicing: 0
   GlobalTags: 0
-  GlobalFavourTags: 2
+  GlobalFavourTags: 1
   TagTracks:
   - m_tagId: 1073741824
     m_tagName: 
@@ -4121,12 +4121,12 @@ MonoBehaviour:
   BeforeClips: []
   AfterClips: []
   Looping: 0
-  IgnoreEdges: 1
-  ExtrapolateTrajectory: 0
+  IgnoreEdges: 0
+  ExtrapolateTrajectory: 1
   FlattenTrajectory: 1
   RuntimeSplicing: 0
   GlobalTags: 0
-  GlobalFavourTags: 2
+  GlobalFavourTags: 1
   TagTracks:
   - m_tagId: 1073741824
     m_tagName: 
@@ -4391,12 +4391,12 @@ MonoBehaviour:
   BeforeClips: []
   AfterClips: []
   Looping: 0
-  IgnoreEdges: 1
-  ExtrapolateTrajectory: 0
+  IgnoreEdges: 0
+  ExtrapolateTrajectory: 1
   FlattenTrajectory: 1
   RuntimeSplicing: 0
   GlobalTags: 0
-  GlobalFavourTags: 2
+  GlobalFavourTags: 1
   TagTracks:
   - m_tagId: 1073741824
     m_tagName: 
@@ -4624,12 +4624,12 @@ MonoBehaviour:
   BeforeClips: []
   AfterClips: []
   Looping: 0
-  IgnoreEdges: 1
-  ExtrapolateTrajectory: 0
+  IgnoreEdges: 0
+  ExtrapolateTrajectory: 1
   FlattenTrajectory: 1
   RuntimeSplicing: 0
   GlobalTags: 0
-  GlobalFavourTags: 2
+  GlobalFavourTags: 1
   TagTracks:
   - m_tagId: 1073741824
     m_tagName: 
@@ -4862,12 +4862,12 @@ MonoBehaviour:
   BeforeClips: []
   AfterClips: []
   Looping: 0
-  IgnoreEdges: 1
-  ExtrapolateTrajectory: 0
+  IgnoreEdges: 0
+  ExtrapolateTrajectory: 1
   FlattenTrajectory: 1
   RuntimeSplicing: 0
   GlobalTags: 0
-  GlobalFavourTags: 2
+  GlobalFavourTags: 1
   TagTracks:
   - m_tagId: 1073741824
     m_tagName: 
@@ -5112,12 +5112,12 @@ MonoBehaviour:
   BeforeClips: []
   AfterClips: []
   Looping: 0
-  IgnoreEdges: 1
-  ExtrapolateTrajectory: 0
+  IgnoreEdges: 0
+  ExtrapolateTrajectory: 1
   FlattenTrajectory: 1
   RuntimeSplicing: 0
   GlobalTags: 0
-  GlobalFavourTags: 2
+  GlobalFavourTags: 1
   TagTracks:
   - m_tagId: 1073741824
     m_tagName: 
@@ -5373,12 +5373,12 @@ MonoBehaviour:
   BeforeClips: []
   AfterClips: []
   Looping: 0
-  IgnoreEdges: 1
-  ExtrapolateTrajectory: 0
+  IgnoreEdges: 0
+  ExtrapolateTrajectory: 1
   FlattenTrajectory: 1
   RuntimeSplicing: 0
   GlobalTags: 0
-  GlobalFavourTags: 2
+  GlobalFavourTags: 1
   TagTracks:
   - m_tagId: 1073741824
     m_tagName: 
@@ -5639,12 +5639,12 @@ MonoBehaviour:
   BeforeClips: []
   AfterClips: []
   Looping: 0
-  IgnoreEdges: 1
-  ExtrapolateTrajectory: 0
+  IgnoreEdges: 0
+  ExtrapolateTrajectory: 1
   FlattenTrajectory: 1
   RuntimeSplicing: 0
   GlobalTags: 0
-  GlobalFavourTags: 2
+  GlobalFavourTags: 1
   TagTracks:
   - m_tagId: 1073741824
     m_tagName: 
@@ -5889,12 +5889,12 @@ MonoBehaviour:
   BeforeClips: []
   AfterClips: []
   Looping: 0
-  IgnoreEdges: 1
-  ExtrapolateTrajectory: 0
+  IgnoreEdges: 0
+  ExtrapolateTrajectory: 1
   FlattenTrajectory: 1
   RuntimeSplicing: 0
   GlobalTags: 0
-  GlobalFavourTags: 2
+  GlobalFavourTags: 1
   TagTracks:
   - m_tagId: 1073741824
     m_tagName: 
@@ -6708,12 +6708,12 @@ MonoBehaviour:
   BeforeClips: []
   AfterClips: []
   Looping: 0
-  IgnoreEdges: 1
-  ExtrapolateTrajectory: 0
+  IgnoreEdges: 0
+  ExtrapolateTrajectory: 1
   FlattenTrajectory: 1
   RuntimeSplicing: 0
   GlobalTags: 0
-  GlobalFavourTags: 2
+  GlobalFavourTags: 1
   TagTracks:
   - m_tagId: 1073741824
     m_tagName: 
@@ -7245,12 +7245,12 @@ MonoBehaviour:
   BeforeClips: []
   AfterClips: []
   Looping: 0
-  IgnoreEdges: 1
-  ExtrapolateTrajectory: 0
+  IgnoreEdges: 0
+  ExtrapolateTrajectory: 1
   FlattenTrajectory: 1
   RuntimeSplicing: 0
   GlobalTags: 0
-  GlobalFavourTags: 2
+  GlobalFavourTags: 1
   TagTracks:
   - m_tagId: 1073741824
     m_tagName: 
@@ -7782,12 +7782,12 @@ MonoBehaviour:
   BeforeClips: []
   AfterClips: []
   Looping: 0
-  IgnoreEdges: 1
-  ExtrapolateTrajectory: 0
+  IgnoreEdges: 0
+  ExtrapolateTrajectory: 1
   FlattenTrajectory: 1
   RuntimeSplicing: 0
   GlobalTags: 0
-  GlobalFavourTags: 2
+  GlobalFavourTags: 1
   TagTracks:
   - m_tagId: 1073741824
     m_tagName: 
@@ -8069,12 +8069,12 @@ MonoBehaviour:
   BeforeClips: []
   AfterClips: []
   Looping: 0
-  IgnoreEdges: 1
-  ExtrapolateTrajectory: 0
+  IgnoreEdges: 0
+  ExtrapolateTrajectory: 1
   FlattenTrajectory: 1
   RuntimeSplicing: 0
   GlobalTags: 0
-  GlobalFavourTags: 2
+  GlobalFavourTags: 1
   TagTracks:
   - m_tagId: 1073741824
     m_tagName: 
@@ -8726,12 +8726,12 @@ MonoBehaviour:
   BeforeClips: []
   AfterClips: []
   Looping: 0
-  IgnoreEdges: 1
-  ExtrapolateTrajectory: 0
+  IgnoreEdges: 0
+  ExtrapolateTrajectory: 1
   FlattenTrajectory: 1
   RuntimeSplicing: 0
   GlobalTags: 0
-  GlobalFavourTags: 2
+  GlobalFavourTags: 1
   TagTracks:
   - m_tagId: 1073741824
     m_tagName: 
@@ -9025,12 +9025,12 @@ MonoBehaviour:
   BeforeClips: []
   AfterClips: []
   Looping: 0
-  IgnoreEdges: 1
-  ExtrapolateTrajectory: 0
+  IgnoreEdges: 0
+  ExtrapolateTrajectory: 1
   FlattenTrajectory: 1
   RuntimeSplicing: 0
   GlobalTags: 0
-  GlobalFavourTags: 2
+  GlobalFavourTags: 1
   TagTracks:
   - m_tagId: 1073741824
     m_tagName: 
@@ -9275,12 +9275,12 @@ MonoBehaviour:
   BeforeClips: []
   AfterClips: []
   Looping: 0
-  IgnoreEdges: 1
-  ExtrapolateTrajectory: 0
+  IgnoreEdges: 0
+  ExtrapolateTrajectory: 1
   FlattenTrajectory: 1
   RuntimeSplicing: 0
   GlobalTags: 0
-  GlobalFavourTags: 2
+  GlobalFavourTags: 1
   TagTracks:
   - m_tagId: 1073741824
     m_tagName: 
@@ -9586,12 +9586,12 @@ MonoBehaviour:
   BeforeClips: []
   AfterClips: []
   Looping: 0
-  IgnoreEdges: 1
-  ExtrapolateTrajectory: 0
+  IgnoreEdges: 0
+  ExtrapolateTrajectory: 1
   FlattenTrajectory: 1
   RuntimeSplicing: 0
   GlobalTags: 0
-  GlobalFavourTags: 2
+  GlobalFavourTags: 1
   TagTracks:
   - m_tagId: 1073741824
     m_tagName: 
@@ -9836,12 +9836,12 @@ MonoBehaviour:
   BeforeClips: []
   AfterClips: []
   Looping: 0
-  IgnoreEdges: 1
-  ExtrapolateTrajectory: 0
+  IgnoreEdges: 0
+  ExtrapolateTrajectory: 1
   FlattenTrajectory: 1
   RuntimeSplicing: 0
   GlobalTags: 0
-  GlobalFavourTags: 2
+  GlobalFavourTags: 1
   TagTracks:
   - m_tagId: 1073741824
     m_tagName: 
@@ -10302,12 +10302,12 @@ MonoBehaviour:
   BeforeClips: []
   AfterClips: []
   Looping: 0
-  IgnoreEdges: 1
-  ExtrapolateTrajectory: 0
+  IgnoreEdges: 0
+  ExtrapolateTrajectory: 1
   FlattenTrajectory: 1
   RuntimeSplicing: 0
   GlobalTags: 0
-  GlobalFavourTags: 2
+  GlobalFavourTags: 1
   TagTracks:
   - m_tagId: 1073741824
     m_tagName: 
@@ -10588,12 +10588,12 @@ MonoBehaviour:
   BeforeClips: []
   AfterClips: []
   Looping: 0
-  IgnoreEdges: 1
-  ExtrapolateTrajectory: 0
+  IgnoreEdges: 0
+  ExtrapolateTrajectory: 1
   FlattenTrajectory: 1
   RuntimeSplicing: 0
   GlobalTags: 0
-  GlobalFavourTags: 2
+  GlobalFavourTags: 1
   TagTracks:
   - m_tagId: 1073741824
     m_tagName: 

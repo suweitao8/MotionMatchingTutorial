@@ -11,9 +11,14 @@ public class UnityChanController : MonoBehaviour
 
     private bool m_IsMotionMatching = true;
 
+    private LocomotionSpeedRamp m_LocomotionSpeedRamp;
+    private MxMTrajectoryGenerator m_MxMTrajectoryGenerator;
+
     private void Awake()
     {
         m_MxMAnimator = GetComponent<MxMAnimator>();
+        m_LocomotionSpeedRamp = GetComponent<LocomotionSpeedRamp>();
+        m_MxMTrajectoryGenerator = GetComponent<MxMTrajectoryGenerator>();
     }
 
     void Update()
@@ -29,6 +34,17 @@ public class UnityChanController : MonoBehaviour
             {
                 m_MxMAnimator.BlendInController(blendAnimatorRate);
             }
+        }
+
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            m_LocomotionSpeedRamp.BeginSprint();
+            m_MxMTrajectoryGenerator.MaxSpeed = 10f;
+        }
+        else if (Input.GetKeyUp(KeyCode.LeftShift))
+        {
+            m_LocomotionSpeedRamp.ResetFromSprint();
+            m_MxMTrajectoryGenerator.MaxSpeed = 4f;
         }
     }
 }

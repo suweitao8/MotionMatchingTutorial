@@ -5,6 +5,7 @@ using MxM;
 
 public class LocomotionSpeedRamp : MonoBehaviour
 {
+    // 0: walk, 1: run, 2: sprint
     [SerializeField] private int m_currentSpeed = 0;
     [SerializeField] private float m_speedDowngradeTime = 0.3f;
     [SerializeField] private Transform m_playerTransform = null;

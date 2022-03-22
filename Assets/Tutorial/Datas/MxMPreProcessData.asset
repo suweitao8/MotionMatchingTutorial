@@ -136,6 +136,7 @@ MonoBehaviour:
   m_animModules:
   - {fileID: 11400000, guid: 8fb0bcfdf86c55f4ab0d8a2cf9806979, type: 2}
   - {fileID: 11400000, guid: 05362c268bf50af44bdca25dbacb91cb, type: 2}
+  - {fileID: 11400000, guid: c768c08dd4cafe04680a36ec2313a2a8, type: 2}
   m_animIdleSets: []
   m_blendSpaces: []
   m_motionTimingPresets: {fileID: 0}
