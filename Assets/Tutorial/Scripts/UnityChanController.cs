@@ -6,6 +6,7 @@ using MxM;
 public class UnityChanController : MonoBehaviour
 {
     public float blendAnimatorRate = 1f;
+    public bool isPistol = false;
 
     private MxMAnimator m_MxMAnimator;
 
@@ -45,6 +46,20 @@ public class UnityChanController : MonoBehaviour
         {
             m_LocomotionSpeedRamp.ResetFromSprint();
             m_MxMTrajectoryGenerator.MaxSpeed = 4f;
+        }
+
+        // pistol switch
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            isPistol = !isPistol;
+            if (isPistol)
+            {
+                m_MxMAnimator.AddRequiredTags(ETags.Tag1);
+            }
+            else
+            {
+                m_MxMAnimator.RemoveRequiredTags(ETags.Tag1);
+            }
         }
     }
 }

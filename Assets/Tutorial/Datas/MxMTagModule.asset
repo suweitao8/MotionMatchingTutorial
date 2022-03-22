@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: MxMTagModule
   m_EditorClassIdentifier: 
   m_tagNames:
-  - Tag 1
+  - Pistol
   - Tag 2
   - Tag 3
   - Tag 4
