@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using MxM;
 using MxMGameplay;
+using UnityEngine.InputSystem;
 
 public class UnityChanController : MonoBehaviour
 {
@@ -31,6 +32,7 @@ public class UnityChanController : MonoBehaviour
     private LocomotionSpeedRamp m_LocomotionSpeedRamp;
     private MxMTrajectoryGenerator m_MxMTrajectoryGenerator;
     private GenericControllerWrapper m_GenericControllerWrapper;
+    private PlayerInputActions m_PlayerInputActions;
 
     private void Awake()
     {
@@ -38,6 +40,9 @@ public class UnityChanController : MonoBehaviour
         m_LocomotionSpeedRamp = GetComponent<LocomotionSpeedRamp>();
         m_MxMTrajectoryGenerator = GetComponent<MxMTrajectoryGenerator>();
         m_GenericControllerWrapper = GetComponent<GenericControllerWrapper>();
+        m_PlayerInputActions = new PlayerInputActions();
+        m_PlayerInputActions.Game.TogglePistol.performed += TogglePistol;
+        m_PlayerInputActions.Enable();
 
         height = m_GenericControllerWrapper.Height;
         centerY = m_GenericControllerWrapper.Center.y;
@@ -45,6 +50,12 @@ public class UnityChanController : MonoBehaviour
 
     void Update()
     {
+        Vector2 movement = m_PlayerInputActions.Game.Movement.ReadValue<Vector2>();
+        m_MxMTrajectoryGenerator.InputVector = new Vector3(movement.x, 0f, movement.y);
+
+
+        return;
+
         if (Input.GetKeyDown(KeyCode.Z))
         {
             m_IsMotionMatching = !m_IsMotionMatching;
@@ -69,33 +80,7 @@ public class UnityChanController : MonoBehaviour
             m_MxMTrajectoryGenerator.MaxSpeed = 4f;
         }
 
-        // pistol switch
-        if (Input.GetKeyDown(KeyCode.F))
-        {
-            isPistol = !isPistol;
-            if (isPistol)
-            {
-                // play equip animation
-                m_MxMAnimator.BeginEvent(eventDefEquip);
-                m_MxMAnimator.AddRequiredTags(ETags.Tag1);
-                m_MxMTrajectoryGenerator.TrajectoryMode = ETrajectoryMoveMode.Strafe;
-                m_MxMAnimator.AngularErrorWarpMethod = EAngularErrorWarpMethod.TrajectoryFacing;
-                m_MxMAnimator.AngularErrorWarpRate = 360f;
-                m_MxMAnimator.AngularErrorWarpThreshold = 180f;
 
-            }
-            else
-            {
-                // play unequip animation
-                m_MxMAnimator.BeginEvent(eventDefUnEquip);
-                m_MxMAnimator.RemoveRequiredTags(ETags.Tag1);
-                m_MxMTrajectoryGenerator.TrajectoryMode = ETrajectoryMoveMode.Normal;
-                m_MxMAnimator.AngularErrorWarpMethod = EAngularErrorWarpMethod.CurrentHeading;
-                m_MxMAnimator.AngularErrorWarpRate = 45f;
-                m_MxMAnimator.AngularErrorWarpThreshold = 60f;
-
-            }
-        }
 
         switch (state)
         {
@@ -135,6 +120,33 @@ public class UnityChanController : MonoBehaviour
         else
         {
             m_MxMAnimator.RootMotion = EMxMRootMotion.RootMotionApplicator;
+        }
+    }
+
+    private void TogglePistol(InputAction.CallbackContext context)
+    {
+        isPistol = !isPistol;
+        if (isPistol)
+        {
+            // play equip animation
+            m_MxMAnimator.BeginEvent(eventDefEquip);
+            m_MxMAnimator.AddRequiredTags(ETags.Tag1);
+            m_MxMTrajectoryGenerator.TrajectoryMode = ETrajectoryMoveMode.Strafe;
+            m_MxMAnimator.AngularErrorWarpMethod = EAngularErrorWarpMethod.TrajectoryFacing;
+            m_MxMAnimator.AngularErrorWarpRate = 360f;
+            m_MxMAnimator.AngularErrorWarpThreshold = 180f;
+
+        }
+        else
+        {
+            // play unequip animation
+            m_MxMAnimator.BeginEvent(eventDefUnEquip);
+            m_MxMAnimator.RemoveRequiredTags(ETags.Tag1);
+            m_MxMTrajectoryGenerator.TrajectoryMode = ETrajectoryMoveMode.Normal;
+            m_MxMAnimator.AngularErrorWarpMethod = EAngularErrorWarpMethod.CurrentHeading;
+            m_MxMAnimator.AngularErrorWarpRate = 45f;
+            m_MxMAnimator.AngularErrorWarpThreshold = 60f;
+
         }
     }
 }
