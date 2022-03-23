@@ -16,6 +16,8 @@ public class UnityChanController : MonoBehaviour
     public bool isPistol = false;
     public MxMEventDefinition eventDefSlide;
     public UnityChanState state = UnityChanState.Normal;
+    public MxMEventDefinition eventDefEquip;
+    public MxMEventDefinition eventDefUnEquip;
 
     private MxMAnimator m_MxMAnimator;
 
@@ -70,6 +72,8 @@ public class UnityChanController : MonoBehaviour
             isPistol = !isPistol;
             if (isPistol)
             {
+                // play equip animation
+                m_MxMAnimator.BeginEvent(eventDefEquip);
                 m_MxMAnimator.AddRequiredTags(ETags.Tag1);
                 m_MxMTrajectoryGenerator.TrajectoryMode = ETrajectoryMoveMode.Strafe;
                 m_MxMAnimator.AngularErrorWarpMethod = EAngularErrorWarpMethod.TrajectoryFacing;
@@ -79,6 +83,8 @@ public class UnityChanController : MonoBehaviour
             }
             else
             {
+                // play unequip animation
+                m_MxMAnimator.BeginEvent(eventDefUnEquip);
                 m_MxMAnimator.RemoveRequiredTags(ETags.Tag1);
                 m_MxMTrajectoryGenerator.TrajectoryMode = ETrajectoryMoveMode.Normal;
                 m_MxMAnimator.AngularErrorWarpMethod = EAngularErrorWarpMethod.CurrentHeading;
