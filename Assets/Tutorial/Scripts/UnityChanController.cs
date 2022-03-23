@@ -2,24 +2,40 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using MxM;
+using MxMGameplay;
 
 public class UnityChanController : MonoBehaviour
 {
+    public enum UnityChanState
+    {
+        Normal,
+        Slide,
+    }
+
     public float blendAnimatorRate = 1f;
     public bool isPistol = false;
+    public MxMEventDefinition eventDefSlide;
+    public UnityChanState state = UnityChanState.Normal;
 
     private MxMAnimator m_MxMAnimator;
 
     private bool m_IsMotionMatching = true;
+    private float height;
+    private float centerY;
 
     private LocomotionSpeedRamp m_LocomotionSpeedRamp;
     private MxMTrajectoryGenerator m_MxMTrajectoryGenerator;
+    private GenericControllerWrapper m_GenericControllerWrapper;
 
     private void Awake()
     {
         m_MxMAnimator = GetComponent<MxMAnimator>();
         m_LocomotionSpeedRamp = GetComponent<LocomotionSpeedRamp>();
         m_MxMTrajectoryGenerator = GetComponent<MxMTrajectoryGenerator>();
+        m_GenericControllerWrapper = GetComponent<GenericControllerWrapper>();
+
+        height = m_GenericControllerWrapper.Height;
+        centerY = m_GenericControllerWrapper.Center.y;
     }
 
     void Update()
@@ -70,6 +86,29 @@ public class UnityChanController : MonoBehaviour
                 m_MxMAnimator.AngularErrorWarpThreshold = 60f;
 
             }
+        }
+
+        switch (state)
+        {
+            case UnityChanState.Normal:
+                if (Input.GetKeyDown(KeyCode.LeftControl))
+                {
+                    state = UnityChanState.Slide;
+                    m_MxMAnimator.BeginEvent(eventDefSlide);
+                    m_GenericControllerWrapper.Height = height / 3f;
+                    m_GenericControllerWrapper.Center = Vector3.up * centerY / 3f;
+                }
+                break;
+            case UnityChanState.Slide:
+                if (m_MxMAnimator.IsEventComplete)
+                {
+                    state = UnityChanState.Normal;
+                    m_GenericControllerWrapper.Height = height;
+                    m_GenericControllerWrapper.Center = Vector3.up * centerY;
+                }
+                break;
+            default:
+                break;
         }
     }
 }

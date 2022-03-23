@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: MxMEventModule
   m_EditorClassIdentifier: 
   m_eventNames:
-  - Event 1
+  - Slide
   - Event 2
