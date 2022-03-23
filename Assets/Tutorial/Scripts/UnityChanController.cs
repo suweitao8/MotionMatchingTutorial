@@ -18,6 +18,9 @@ public class UnityChanController : MonoBehaviour
     public UnityChanState state = UnityChanState.Normal;
     public MxMEventDefinition eventDefEquip;
     public MxMEventDefinition eventDefUnEquip;
+    public MxMEventDefinition eventDefVault;
+    public Transform contact1;
+    public Transform contact2;
 
     private MxMAnimator m_MxMAnimator;
 
@@ -115,6 +118,14 @@ public class UnityChanController : MonoBehaviour
                 break;
             default:
                 break;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            eventDefVault.ClearContacts();
+            eventDefVault.AddEventContact(contact1.position, transform.rotation.eulerAngles.y);
+            eventDefVault.AddEventContact(contact2.position, transform.rotation.eulerAngles.y);
+            m_MxMAnimator.BeginEvent(eventDefVault);
         }
     }
 }
