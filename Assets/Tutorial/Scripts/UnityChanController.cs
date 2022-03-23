@@ -55,10 +55,20 @@ public class UnityChanController : MonoBehaviour
             if (isPistol)
             {
                 m_MxMAnimator.AddRequiredTags(ETags.Tag1);
+                m_MxMTrajectoryGenerator.TrajectoryMode = ETrajectoryMoveMode.Strafe;
+                m_MxMAnimator.AngularErrorWarpMethod = EAngularErrorWarpMethod.TrajectoryFacing;
+                m_MxMAnimator.AngularErrorWarpRate = 360f;
+                m_MxMAnimator.AngularErrorWarpThreshold = 180f;
+
             }
             else
             {
                 m_MxMAnimator.RemoveRequiredTags(ETags.Tag1);
+                m_MxMTrajectoryGenerator.TrajectoryMode = ETrajectoryMoveMode.Normal;
+                m_MxMAnimator.AngularErrorWarpMethod = EAngularErrorWarpMethod.CurrentHeading;
+                m_MxMAnimator.AngularErrorWarpRate = 45f;
+                m_MxMAnimator.AngularErrorWarpThreshold = 60f;
+
             }
         }
     }
