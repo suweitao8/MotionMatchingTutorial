@@ -21,7 +21,7 @@ MonoBehaviour:
   ExtrapolateTrajectory: 1
   FlattenTrajectory: 0
   RuntimeSplicing: 0
-  GlobalTags: 0
+  GlobalTags: 1073741824
   GlobalFavourTags: 0
   TagTracks: []
   FavourTagTracks: []
@@ -167,14 +167,14 @@ MonoBehaviour:
   ExtrapolateTrajectory: 1
   FlattenTrajectory: 0
   RuntimeSplicing: 0
-  GlobalTags: 0
+  GlobalTags: 1073741824
   GlobalFavourTags: 0
   TagTracks: []
   FavourTagTracks: []
   Events:
   - EventId: 3
     EventName: Vault
-    EventTime: 0.8666667
+    EventTime: 0.8693333
     Windup: 0.336
     Actions:
     - 0.37066668
@@ -230,7 +230,12 @@ MonoBehaviour:
     m_trackName: Disable Trajectory Warp (Long)
     m_clipLength: 2.066667
     m_tagPositions: []
-  UserBoolTracks: []
+  UserBoolTracks:
+  - m_trackId: 1
+    m_trackName: DisableCollision
+    m_clipLength: 2.066667
+    m_tagPositions:
+    - {x: 0.48266667, y: 1.4766682}
   RuntimePlaybackSpeed: 1
   UseSpeedMods: 0
   MotionModifier:
@@ -334,7 +339,7 @@ MonoBehaviour:
     Extrapolate_default: 1
     FlattenTrajectory_default: 0
     RuntimeSplicing_default: 0
-    RequireTags_default: 0
+    RequireTags_default: 1073741824
     FavourTags_default: 0
   m_animIdleSets: []
   m_blendSpaces: []

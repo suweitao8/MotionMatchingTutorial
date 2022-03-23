@@ -127,5 +127,14 @@ public class UnityChanController : MonoBehaviour
             eventDefVault.AddEventContact(contact2.position, transform.rotation.eulerAngles.y);
             m_MxMAnimator.BeginEvent(eventDefVault);
         }
+
+        if (m_MxMAnimator.QueryUserTags(EUserTags.UserTag1))
+        {
+            m_MxMAnimator.RootMotion = EMxMRootMotion.On;
+        }
+        else
+        {
+            m_MxMAnimator.RootMotion = EMxMRootMotion.RootMotionApplicator;
+        }
     }
 }

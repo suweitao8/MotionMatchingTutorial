@@ -3160,7 +3160,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4469045743497357414, guid: bfd7074731f552f48abc2d773ccddf74, type: 3}
       propertyPath: m_rootMotionMode
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4469045743497357414, guid: bfd7074731f552f48abc2d773ccddf74, type: 3}
       propertyPath: m_calibrationOverride
